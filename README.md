@@ -42,4 +42,4 @@ B.Eng. Electrical Engineering — CEFET-RJ, Brazil. The engineering mindset stuc
 
 ## Contact
 
-- **Email** — matheus.malagris@arcticleaf.com
+- **Email** — malagrismatheus@gmail.com
