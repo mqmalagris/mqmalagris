@@ -24,15 +24,15 @@ Go Lambdas + Terraform-managed AWS (SES inbound, S3, DynamoDB with TTL auto-dele
 
 **Languages**
 
-[![Languages](https://skillicons.dev/icons?i=ts,js,rust,go,dart,python,html,css,bash)](https://skillicons.dev)
+[![Languages](https://skillicons.dev/icons?i=ts,js,rust,go,dart,html,css,bash)](https://skillicons.dev)
 
 **Frontend**
 
-[![Frontend](https://skillicons.dev/icons?i=react,svelte,astro,nextjs,vue,angular,tailwind,sass,redux,vite,webpack)](https://skillicons.dev)
+[![Frontend](https://skillicons.dev/icons?i=react,svelte,astro,nextjs,vue,angular,tailwind,sass,redux,apollo,graphql,vite,webpack)](https://skillicons.dev)
 
 **Mobile**
 
-[![Mobile](https://skillicons.dev/icons?i=flutter,ionic)](https://skillicons.dev)
+[![Mobile](https://skillicons.dev/icons?i=flutter)](https://skillicons.dev)
 
 **Backend**
 
@@ -40,15 +40,15 @@ Go Lambdas + Terraform-managed AWS (SES inbound, S3, DynamoDB with TTL auto-dele
 
 **Databases**
 
-[![Databases](https://skillicons.dev/icons?i=postgres,mongodb,mysql,sqlite,supabase,prisma)](https://skillicons.dev)
+[![Databases](https://skillicons.dev/icons?i=postgres,mongodb,mysql,sqlite,dynamodb,supabase,firebase)](https://skillicons.dev)
 
 **Cloud & Infra**
 
-[![Cloud](https://skillicons.dev/icons?i=aws,cloudflare,vercel,docker,terraform,nginx)](https://skillicons.dev)
+[![Cloud](https://skillicons.dev/icons?i=aws,cloudflare,workers,vercel,docker,terraform)](https://skillicons.dev)
 
 **Tooling & Testing**
 
-[![Tooling](https://skillicons.dev/icons?i=git,github,githubactions,vitest,jest,vscode,figma,postman)](https://skillicons.dev)
+[![Tooling](https://skillicons.dev/icons?i=git,github,githubactions,vitest,jest,pnpm,vscode,postman)](https://skillicons.dev)
 
 ---
 
