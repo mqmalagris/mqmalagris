@@ -22,15 +22,33 @@ Go Lambdas + Terraform-managed AWS (SES inbound, S3, DynamoDB with TTL auto-dele
 
 ## Stack
 
-| | |
-|---|---|
-| **Frontend** | Next.js · React · Svelte · Astro · Vue · Angular · Flutter · React Native · TypeScript · Tailwind |
-| **Backend** | Node (Hono · Express · LoopBack · Strapi) · Rust (Axum) · Go · Bun |
-| **Data** | PostgreSQL · MongoDB · MySQL/MariaDB · DynamoDB · D1 · Supabase |
-| **Cloud** | AWS (Lambda · SAM · DynamoDB · SQS · EventBridge · SES · S3) · Cloudflare Workers (D1 · R2 · KV) · Fly.io · Vercel |
-| **E-commerce** | BigCommerce (Stencil) · Miva (MVT) · Shopify · ReCharge · Stripe · DocuSign |
-| **Testing** | Vitest · Playwright · Jest · insta · proptest · testcontainers |
-| **Tooling** | Terraform · Docker · Turborepo · EAS · Wrangler |
+**Languages**
+
+[![Languages](https://skillicons.dev/icons?i=ts,js,rust,go,dart,python,html,css,bash)](https://skillicons.dev)
+
+**Frontend**
+
+[![Frontend](https://skillicons.dev/icons?i=react,svelte,astro,nextjs,vue,angular,tailwind,sass,redux,vite,webpack)](https://skillicons.dev)
+
+**Mobile**
+
+[![Mobile](https://skillicons.dev/icons?i=flutter,ionic)](https://skillicons.dev)
+
+**Backend**
+
+[![Backend](https://skillicons.dev/icons?i=nodejs,express,bun)](https://skillicons.dev)
+
+**Databases**
+
+[![Databases](https://skillicons.dev/icons?i=postgres,mongodb,mysql,sqlite,supabase,prisma)](https://skillicons.dev)
+
+**Cloud & Infra**
+
+[![Cloud](https://skillicons.dev/icons?i=aws,cloudflare,vercel,docker,terraform,nginx)](https://skillicons.dev)
+
+**Tooling & Testing**
+
+[![Tooling](https://skillicons.dev/icons?i=git,github,githubactions,vitest,jest,vscode,figma,postman)](https://skillicons.dev)
 
 ---
 
