@@ -1,6 +1,6 @@
 # Matheus Malagris
 
-**Senior Full-Stack Developer** — based in Brazil.
+**Full-Stack Developer** — based in Brazil.
 Building production software at [Arctic Leaf Inc.](https://arcticleaf.io) — SaaS platforms, e-commerce storefronts, serverless data pipelines, and ERP integrations.
 
 I started in Electrical Engineering and ended up deep in software, drawn by the same thing: building systems that work precisely and reliably. I like the parts of the job most people avoid — distributed state, third-party API complexity, schema design that has to survive real-world load.
