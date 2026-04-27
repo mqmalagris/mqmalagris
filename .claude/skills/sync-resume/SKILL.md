@@ -55,20 +55,43 @@ For each match, prepare a single-paragraph blurb that reflects the resume's curr
 - Keep the same length budget as the existing blurb (±20%). The README is not a re-print of the resume.
 - Preserve any live-URL link the user has wired into the heading (`### [Project](https://...)`) — do not strip it.
 
-### 4. Check the skillicons rows
+### 4. Check the devicon rows
 
-Compare the resume's "Technical Skills Summary" table against the icon rows. Propose adds when the resume lists a tech that has a skillicons identifier and isn't already represented; propose removals only if a row contains a tech the user has clearly dropped from the resume.
+Each stack row is a sequence of `<img>` tags pointing at `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/{name}/{name}-{variant}.svg`. The README uses `width="48" height="48"` for visual uniformity.
 
-**Do not invent skillicons codes.** If unsure whether `skillicons.dev` supports a given tech, fetch `https://skillicons.dev` once to confirm before adding.
+Compare the resume's "Technical Skills Summary" table against the icon rows. Propose adds when the resume lists a tech with a devicon entry that isn't already represented; propose removals only if a row contains a tech the user has clearly dropped from the resume.
 
-Tech that has no skillicons icon (Hono, Axum, LoopBack, Strapi, Capacitor, BigCommerce, Miva, Shopify, ReCharge, Stripe, DocuSign, Turborepo, EAS, Wrangler, Fly.io, Anthropic SDK, OpenAI SDK, Langchain, Playwright as of writing) is intentionally absent — the icons are a vibe, not a complete inventory. Do not "fill the gap" with shields.io badges unless the user asks.
+**Do not invent devicon names or variants.** Verify before adding:
+
+```bash
+# 1. Confirm the folder exists
+gh api repos/devicons/devicon/contents/icons/<name> -q '.[].name' | grep '\.svg$'
+
+# 2. Pick a variant that exists for that icon (typical: original, plain, line, with -wordmark suffixes)
+```
+
+Some name resolutions to remember (devicon uses long-form names):
+
+- AWS → `amazonwebservices` (only `-wordmark` variants exist; use `original-wordmark`)
+- Vue → `vuejs`
+- Next.js → `nextjs`
+- Vite → `vitejs`
+- Postgres → `postgresql`
+- HTML / CSS → `html5` / `css3`
+- Apollo → `apollographql`
+- Cloudflare Workers → `cloudflareworkers` (separate from `cloudflare`)
+- Express → `express` (no `-js` suffix)
+- Jest → only `plain` variant exists
+- GraphQL → only `plain` and `plain-wordmark` variants
+
+Tech with no devicon entry (Hono, Axum, LoopBack, Strapi, BigCommerce, Miva, Shopify, ReCharge, Stripe, DocuSign, Turborepo, EAS, Wrangler, Fly.io, Anthropic SDK, OpenAI SDK, Langchain, Playwright, MariaDB, Drizzle, sqlx, TypeORM as of writing) is intentionally absent — the icons are a vibe, not a complete inventory. Do not fill the gap with shields.io badges unless the user asks.
 
 ### 5. Propose, then write
 
 Show the user, before editing:
 
 - Per project: the current blurb and the proposed replacement, with a one-line rationale ("resume now lists Svensson 1994 fit and Nelder-Mead optimizer — added").
-- Any proposed icon-row changes, also with rationale.
+- Any proposed icon-row changes, also with rationale (and the verification command output, so the user can see the icon exists).
 - Any candidate new featured projects ("`mami.care` is in the resume but not the README — surface it?") — present, do not apply.
 - Any flagged removals ("`SynthChord` is in the README but no longer in the resume — keep, remove, or rename?").
 
@@ -79,7 +102,7 @@ Wait for explicit confirmation. Then apply with `Edit` (not `Write`) so the diff
 - **Project sections:** `### [Name](optional-url) — Short descriptor`
 - **Blurb:** one paragraph, prose. Concrete capabilities and architectural choices, no marketing adverbs. If a sentence reads like a recruiter wrote it, rewrite it.
 - **No emojis.** Ever.
-- **No badges other than skillicons.** Adding shields.io mid-row breaks the visual grouping.
+- **No badges other than devicon.** Adding shields.io mid-row breaks the visual grouping.
 - **Em-dashes (—), not hyphens**, in headings and intro lines, matching the existing copy.
 
 ## What NOT to touch
@@ -93,7 +116,7 @@ Wait for explicit confirmation. Then apply with `Edit` (not `Write`) so the diff
 ## After-write checks
 
 - Verify all four `##` sections still exist in the file.
-- Verify all skillicons URLs still parse as `https://skillicons.dev/icons?i=…`.
+- Verify every `<img>` tag still points at `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/<name>/<name>-<variant>.svg` and uses `width="48" height="48"`.
 - Verify no project's heading lost its live-URL link.
 - Report: which blurbs changed, in one sentence.
 
