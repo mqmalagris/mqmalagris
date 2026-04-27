@@ -57,9 +57,15 @@ For each match, prepare a single-paragraph blurb that reflects the resume's curr
 
 ### 4. Check the devicon rows
 
-Each stack row is a sequence of `<img>` tags pointing at `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/{name}/{name}-{variant}.svg`. The README uses `width="48" height="48"` for visual uniformity.
+Each stack row is a sequence of `<img>` tags pointing at `https://raw.githubusercontent.com/devicons/devicon/master/icons/{name}/{name}-{variant}.svg`. The README uses `width="48"` only — no `height` attribute.
 
-**Each row's `<img>` tags must live on a single line, separated by single spaces.** GitHub's GFM renders newlines between adjacent inline HTML elements as `<br>` tags, even inside an HTML block wrapper, which stacks the icons vertically. A `<p>` wrapper alone is not enough — the only reliable fix is to have no newlines between `<img>` tags at all. Yes, the line will be long; that is fine.
+**Two non-obvious GitHub rendering rules apply:**
+
+1. **`<img>` tags with both `width` AND `height` get `display: block` injected** by GitHub's image-fallback (`js-gh-image-fallback`) styling, which stacks them vertically regardless of source layout. Set `width` only — devicon SVGs all use a `viewBox="0 0 128 128"`, so the rendered size is square at the requested width.
+
+2. **All `<img>` tags on a row must live on a single line, separated by single spaces.** Newlines between adjacent inline HTML elements get rendered as `<br>` tags by GFM, even inside an HTML block wrapper. The line will be long; that is fine.
+
+Together: long single line, `width="48"` only, no `height`, no `<p>` wrapper.
 
 Compare the resume's "Technical Skills Summary" table against the icon rows. Propose adds when the resume lists a tech with a devicon entry that isn't already represented; propose removals only if a row contains a tech the user has clearly dropped from the resume.
 
