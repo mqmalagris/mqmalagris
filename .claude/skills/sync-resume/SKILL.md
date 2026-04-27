@@ -59,6 +59,8 @@ For each match, prepare a single-paragraph blurb that reflects the resume's curr
 
 Each stack row is a sequence of `<img>` tags pointing at `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/{name}/{name}-{variant}.svg`. The README uses `width="48" height="48"` for visual uniformity.
 
+**Each row's `<img>` tags must be wrapped in a single `<p>...</p>` block.** Without the wrapper, GitHub's renderer treats each line break as a `<br>` and stacks the icons vertically. The `<p>` block is parsed as raw HTML, so the internal newlines collapse to whitespace and the images render inline. Indent the `<img>` tags by two spaces inside the `<p>` for source readability.
+
 Compare the resume's "Technical Skills Summary" table against the icon rows. Propose adds when the resume lists a tech with a devicon entry that isn't already represented; propose removals only if a row contains a tech the user has clearly dropped from the resume.
 
 **Do not invent devicon names or variants.** Verify before adding:
