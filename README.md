@@ -9,6 +9,9 @@ I started in Electrical Engineering and ended up deep in software, drawn by the 
 
 ## Selected projects
 
+### [claude-skills](https://github.com/mqmalagris/claude-skills) — Claude Code plugin marketplace
+Curated marketplace installable via `/plugin marketplace add mqmalagris/claude-skills`. Headline skill is **swe-compass**, a multi-mode software engineering coach that routes intent across architect/advisor/reviewer/refactor/explain workflows — stack-agnostic by default, defers to the user's chosen stack, then optimizes for that stack's idioms (skips Singleton suggestions for Rust where `lazy_static!` solves it natively). Progressive-disclosure layout: `SKILL.md` router, 5 workflows, 9 topics (SOLID, GoF subset, TDD, refactoring, DevOps, processes, requirements, modeling), 10 cross-cutting reference tables, 5 checklists. Plugin manifest at `.claude-plugin/marketplace.json` registers skills with category/keywords/semver.
+
 ### [yield-curves](https://crates.io/crates/yield-curves) — Rust yield curve library
 Pure-Rust fixed-income interpolation and parametric fitting: piecewise linear, natural cubic spline (C² via Thomas tridiagonal solver), Nelson-Siegel (1987), Svensson (1994). Zero third-party numerical crates — bundles its own Nelder-Mead simplex optimizer. `unsafe_code = "forbid"` at the crate level, with a post-fit sanity check so callers can deterministically fall back to the spline when the optimizer lands on an implausible mode. Published to crates.io.
 
