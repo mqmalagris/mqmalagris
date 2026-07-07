@@ -18,14 +18,14 @@ Pure-Rust fixed-income library: piecewise linear, natural cubic spline (C² via 
 ### [protoglot](https://crates.io/crates/protoglot) — Multiprotocol API client
 Local-first, git-friendly API client spanning REST, GraphQL, SOAP, WebSocket, and gRPC in a single TOML collection format — a Postman/Bruno alternative. Dynamic gRPC via `.proto` reflection with no `protoc` dependency; JS pre/post-request hooks via `boa_engine`. CLI-first (`pglot`) test runner with JUnit/TAP output and CI-correct exit codes, data-driven testing (CSV/JSON), JSON Schema assertions, and snapshot testing — the same engine powers a native egui desktop app. Ships to npm and crates.io with SLSA build provenance.
 
-### SynthChord — Chord-pad music synthesizer
+### [SynthChord](https://synthchord.com/) — Chord-pad music synthesizer
 Flutter chord-pad synthesizer built on the Nashville Number System — tap diatonic pads or twist a joystick to morph chord quality (maj7, sus4, dim, aug). Three instrument engines (SF2 soundfont, pure-Dart subtractive synth, chromatic WAV sampler), a reorderable effects chain (Freeverb reverb, delay, low-pass filter), looper, arpeggiator, and a low-latency 512-frame PCM audio path with a FluidSynth fallback on desktop and web. EN/ES/FR/pt-BR i18n, RevenueCat freemium gate, Android release CD via GitHub Actions.
 
 ### [Ephemask](https://ephemask.com/) — Disposable email service
 Go Lambdas + Terraform-managed AWS (SES inbound, S3, DynamoDB with TTL auto-delete, API Gateway, Route53). Astro + Svelte 5 web, React Native + Expo mobile, shared TypeScript API client — all in a Turborepo monorepo. Freemium: 10-minute inboxes free, 60-minute with custom domains on pro.
 
-### [Economapy](https://economapy.com) — Brazilian economic indicators API
-Public freemium REST + GraphQL API (Indicadores-BR) aggregating Brazilian and international economic data — BCB, IBGE SIDRA, Tesouro Nacional, FRED, ECB — into normalized endpoints with complete history and aggressive caching. Rust + Axum with compile-time-checked sqlx queries, apalis ingestion workers with retry and circuit breakers, real-time PTAX over WebSocket, HMAC-signed webhooks and alerts, and financial calculators (SAC/Price amortization, monetary correction, CDB/LCI/LCA comparison). Yield-curve endpoints are backed by my own yield-curves crate. Single binary on Fly.io; Astro landing at economapy.com.
+### [Economapy](https://api.economapy.com/docs/) — Brazilian economic indicators API
+Public freemium REST + GraphQL API (Indicadores-BR) aggregating Brazilian and international economic data — BCB, IBGE SIDRA, Tesouro Nacional, FRED, ECB — into normalized endpoints with complete history and aggressive caching. Rust + Axum with compile-time-checked sqlx queries, apalis ingestion workers with retry and circuit breakers, real-time PTAX over WebSocket, HMAC-signed webhooks and alerts, and financial calculators (SAC/Price amortization, monetary correction, CDB/LCI/LCA comparison). Yield-curve endpoints are backed by my own yield-curves crate. Single binary on Fly.io; OpenAPI docs and Swagger UI at api.economapy.com/docs.
 
 ---
 
