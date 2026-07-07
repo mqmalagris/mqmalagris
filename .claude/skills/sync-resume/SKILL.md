@@ -1,6 +1,6 @@
 ---
 name: sync-resume
-description: Sync the GitHub profile README at ./README.md from the master resume doc at ../resume-projects.md. Refreshes the blurbs of the curated featured projects and proposes additions/removals to the skillicons rows when the resume's tech footprint shifts. Use when the user says "update my profile", "sync the profile readme", "/sync-resume", or asks to refresh this repo's README from the resume.
+description: Sync the GitHub profile README at ./README.md from the master portfolio doc at ../portfolio-projects.md. Refreshes the blurbs of the curated featured projects and proposes additions/removals to the skillicons rows when the resume's tech footprint shifts. Use when the user says "update my profile", "sync the profile readme", "/sync-resume", or asks to refresh this repo's README from the resume.
 ---
 
 # sync-resume (mqmalagris)
@@ -9,7 +9,7 @@ This is the GitHub profile repo (`github.com/mqmalagris/mqmalagris`). Its `READM
 
 ## Constants
 
-- **Resume file (always this path):** `C:/Users/malag/projects/side/resume-projects.md`
+- **Resume file (always this path):** `C:/Users/malag/projects/side/portfolio-projects.md`
 - **Target file:** `./README.md` at this repo's root
 - **GitHub username:** `mqmalagris`
 
@@ -17,7 +17,7 @@ If the resume file is missing, stop and ask. Never write to a different resume p
 
 ## What this skill is and isn't
 
-The profile README is **curated**, not exhaustive. The user hand-picks which side projects appear (currently yield-curves, CalculeOnline, Ephemask). The resume doc lists everything, including work the user does not want surfaced on a public profile.
+The profile README is **curated**, not exhaustive. The user hand-picks which side projects appear (currently claude-skills, yield-curves, protoglot, SynthChord, Ephemask, Economapy). The resume doc lists everything, including work the user does not want surfaced on a public profile.
 
 Therefore:
 
@@ -38,7 +38,7 @@ Optional free-form list of project names to scope the update (e.g. `/sync-resume
 Run in parallel:
 
 - Read `./README.md` in full.
-- Read `C:/Users/malag/projects/side/resume-projects.md` in full.
+- Read `C:/Users/malag/projects/side/portfolio-projects.md` in full.
 
 Identify the featured-project list from the README (sections under `## Selected projects`).
 
@@ -124,7 +124,7 @@ Wait for explicit confirmation. Then apply with `Edit` (not `Write`) so the diff
 ## After-write checks
 
 - Verify all four `##` sections still exist in the file.
-- Verify every `<img>` tag still points at `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/<name>/<name>-<variant>.svg` and uses `width="48" height="48"`.
+- Verify every `<img>` tag still points at `https://raw.githubusercontent.com/devicons/devicon/master/icons/<name>/<name>-<variant>.svg` and uses `width="48"` only (no `height`).
 - Verify no project's heading lost its live-URL link.
 - Report: which blurbs changed, in one sentence.
 
